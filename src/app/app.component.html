@@ -1,0 +1,15 @@
+<po-page-default p-title="PO UI">
+<po-table
+  p-service-api="https://po-sample-api.herokuapp.com/v1/people"
+  [p-columns]="columns"
+  [p-infinite-scroll]="true"
+  p-selectable="true"
+  p-infinite-scroll-distance="80"
+  (p-selected)="changeOptionsOri($event,'new')"
+  (p-unselected)="changeOptionsOri($event,'change')"
+  p-height="300">
+</po-table>
+
+<hr />
+
+</po-page-default>
